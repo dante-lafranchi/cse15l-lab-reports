@@ -1,7 +1,7 @@
 # Lab Report Week 1 - Remote Access and the Filesystem
 
 ## Step 1:
-I already had Visual Studio Code installed but I remember it being a pretty easy process. VS Code is free and there were many tutorials on youtube to help me learn about all about the different features in VS Code.
+I already had Visual Studio Code installed but I remember it being a pretty easy process. VS Code is free and there were many tutorials on youtube to help me learn all about the different features in VS Code.
 ![Image](Screenshots/VSCode-home-page-SS.png)
 ![Image](Screenshots/New-VSCode-terminal-SS.png) 
 
@@ -20,7 +20,7 @@ I used the "scp" command to move the WhereAmI.java file I had on my local comput
 ![Image](Screenshots/running-file-locally.png)
 
 ## Step 5
-To use the "ssh" and "scp" commands without a password, I ran the ssh-keygen program on the local computer which created a private key (stored on local computer) and a public key (to be stored on remote computer). Then, I logged into the remote computer and created a new directory called authorized_keys using the "mkdir" command. I logged out and the used the "scp" command to move the file with the public key, id_rsa.pub, to the authorized_keys directory in the remote computer. After this, I was able to use the "ssh" and "scp" commands with no password.
+To use the "ssh" and "scp" commands without a password, I ran the ssh-keygen program on the local computer which created a private key (stored on local computer) and a public key (to be stored on remote computer). Then, I logged into the remote computer and created a new directory called authorized_keys using the "mkdir" command. I logged out and used the used the "scp" command to move the file with the public key, id_rsa.pub, to the authorized_keys directory in the remote computer. After this, I was able to use the "ssh" and "scp" commands with no password.
 ![Image](Screenshots/running-ssh-keygen.png)
 ![Image](Screenshots/creating-authorized_keys-directory.png)
 ![Image](Screenshots/moving-public-key-file.png)
