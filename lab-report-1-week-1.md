@@ -1,4 +1,4 @@
-# Lab Report 1 Week 1
+# Lab Report Week 1 - Remote Access and the Filesystem
 
 ## Step 1:
 I already had Visual Studio Code installed but I remember it being a pretty easy process. VS Code is free and there were many tutorials on youtube to help me learn about all about the different features in VS Code.
