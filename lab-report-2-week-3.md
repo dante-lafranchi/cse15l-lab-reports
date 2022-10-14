@@ -56,19 +56,19 @@ In the image below, I added "orange" to the list of words. The handleRequest met
 <br>
 ![Image](Screenshots/add-orange.png)
 
-In the image below, I added "apple" to the list of words. Just like the previous add, the handleRequest method was called and the argument was the URL. Once the method processed my query, the word "apple" was added to the ArrayList strs. strs now contains "orange" and "apple".
+In the image below, I added "apple" to the list of words. Just like the previous add query, the handleRequest method was called and the argument was the URL. Once the method processed my query, the word "apple" was added to the ArrayList strs. strs now contains "orange" and "apple".
 <br>
 ![Image](Screenshots/add-apple.png)
 
-In the image below, I added "mango" to the list of words. Just like the previous add, the handleRequest method was called and the argument was the URL. Once the method processed my query, the word "mango" was added to the ArrayList strs. strs now contains "orange", "apple", and "mango". 
+In the image below, I added "mango" to the list of words. Just like the previous add query, the handleRequest method was called and the argument was the URL. Once the method processed my query, the word "mango" was added to the ArrayList strs. strs now contains "orange", "apple", and "mango". 
 <br>
 ![Image](Screenshots/add-mango.png)
 
-In the image below, I checked if the words in strs contained the substring "an". The handleRequest method was called, and the URL was passed in as an argument. The method saw I did a query with the keyword search, so it used a for each loop to check if each of the individual strings contained the substrin "an". The method created a new string which included all the words that contained a specific substring, and displayed it. strs was not modified by this request.
+In the image below, I checked if the words in strs contained the substring "an". The handleRequest method was called, and the URL was passed in as an argument. The method saw I did a query with the keyword search, so it used a for each loop to check if each of the individual strings contained the substring "an". The method created a new string which included all the words that contained a specific substring, and displayed it. strs was not modified by this request.
 <br>
 ![Image](Screenshots/search-an.png)
 
-In the image below, I displayed the contents of strs. The handleRequest method was called, and the URL was passed in as an argument. The method saw I didn't do a query, so it displayed the contents of strs ("orange, apple, mango"). The URL for this was just localhost:2121. strs was not modified by this request.
+In the image below, I displayed the contents of strs. The handleRequest method was called, and the URL was passed in as an argument. There was no query, so it displayed the contents of strs ("orange, apple, mango"). The URL for this was just localhost:2121. strs was not modified by this request.
 <br>
 ![Image](Screenshots/all-words.png)
 
@@ -97,7 +97,7 @@ As each iteration of the for loop ran, the array looked like this:
 > arr[3] = arr[4 - 3 - 1] = arr[0] = 8
 
 
-To fix this bug, I started my only iterating over half of the array length. Then, I stored arr[i] in a temporary variable, changed the value of arr[i], and then changed the value of arr[arr.length - i - 1] to the temporary variable. This new method effectively starts at the beginning of the array and switches its value with the end of the array. Then it switches the second value in the array with the second to last value in the array. It does this until it reaches the middle, and has therefore finished reversing the array. 
+To fix this bug, I started by only iterating over half of the array length. Then, I stored arr[i] in a temporary variable, changed the value of arr[i], and then changed the value of arr[arr.length - i - 1] to the temporary variable. This new method effectively starts at the beginning of the array and switches its value with the end of the array. Then it switches the second value in the array with the second to last value in the array. It does this until it reaches the middle, and has therefore finished reversing the array. 
 
 The fixed method is:
 ```
@@ -126,7 +126,7 @@ static List<String> filter(List<String> list, StringChecker sc) {
 }
 ```
 
-To fix this bug, I changed the which version of the List add method is being used. I changed it only one parameter (the string to add) from two parameters (the index to add the string at, the string to add). This way, the filtered strings were added in the correct order. 
+To fix this bug, I changed which version of the List add method is being used. I changed the add method to only have one parameter (the string to add) from two parameters (the index to add the string at, the string to add). This way, the filtered strings were added in the correct order. 
 
 The fixed method is:
 ```
