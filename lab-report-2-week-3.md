@@ -111,7 +111,7 @@ static void reverseInPlace(int[] arr) {
 ```
 
 ### Second Bug
-The second bug was in the filter() method in the ListExamples.java file. The failure-inducing input was ["houses", "dog", "CSE15L", "cat", "San Diego"]. The symptom was ["cat", "dog"]. The correct output is ["dog", "cat"] This method checks if each String in the ArrayList has a length less than 5, and if so, adds that String to a new ArrayList at index 0. Although this method is correctly filtering the ArrayList, it is adding the filtered words to the new ArrayList in the wrong order. It is adding them to index 0, when it should just be adding them to the end of the ArrayList. This is why "cat" is before "dog" in the incorrect filtered ArrayList.
+The second bug was in the filter() method in the ListExamples.java file. The failure-inducing input was ["houses", "dog", "CSE15L", "cat", "San Diego"]. The symptom was ["cat", "dog"]. The correct output is ["dog", "cat"]. This method checks if each String in the ArrayList has a length less than 5, and if so, adds that String to a new ArrayList at index 0. Although this method is correctly filtering the ArrayList, it is adding the filtered words to the new ArrayList in the wrong order. It is adding them to index 0, when it should just be adding them to the end of the ArrayList. This is why "cat" is before "dog" in the incorrectly filtered ArrayList.
 
 The buggy method was: 
 ```
