@@ -53,18 +53,23 @@ public class SearchEngine {
 }
 ```
 In the image below, I added "orange" to the list of words. The handleRequest method was called, and the url was passed in as an argument. This method checked if the URL contained any key words which would indicate which action I was trying to take. The method saw I did a query with the keyword add, so the method added the word "orange" (what I put after the = sign in the URL) to the ArrayList strs which is a field in my class. strs now contains "orange".
+<br>
 ![Image](Screenshots/add-orange.png)
 
 In the image below, I added "apple" to the list of words. Just like the previous add, the handleRequest method was called and the argument was the URL. Once the method processed my query, the word "apple" was added to the ArrayList strs. strs now contains "orange" and "apple".
+<br>
 ![Image](Screenshots/add-apple.png)
 
 In the image below, I added "mango" to the list of words. Just like the previous add, the handleRequest method was called and the argument was the URL. Once the method processed my query, the word "mango" was added to the ArrayList strs. strs now contains "orange", "apple", and "mango". 
+<br>
 ![Image](Screenshots/add-mango.png)
 
 In the image below, I checked if the words in strs contained the substring "an". The handleRequest method was called, and the URL was passed in as an argument. The method saw I did a query with the keyword search, so it used a for each loop to check if each of the individual strings contained the substrin "an". The method created a new string which included all the words that contained a specific substring, and displayed it. strs was not modified by this request.
+<br>
 ![Image](Screenshots/search-an.png)
 
 In the image below, I displayed the contents of strs. The handleRequest method was called, and the URL was passed in as an argument. The method saw I didn't do a query, so it displayed the contents of strs ("orange, apple, mango"). The URL for this was just localhost:2121. strs was not modified by this request.
+<br>
 ![Image](Screenshots/all-words.png)
 
 ## Part 2
