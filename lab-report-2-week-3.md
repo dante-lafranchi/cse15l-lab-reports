@@ -1,4 +1,4 @@
-# Lab Report Week 3
+# Lab Report Week 3 - Servers and Bugs
 
 ## Part 1
 Code from Simplest Search Engine from week 2:
