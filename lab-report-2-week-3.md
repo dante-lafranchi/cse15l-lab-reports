@@ -75,7 +75,7 @@ In the image below, I displayed the contents of strs. The handleRequest method w
 ## Part 2
 
 ### First Bug
-The first bug was in the reverseInPlace() method in the ArrayExamples.java file. The failure-inducing input was [3, 5, 4, 8]. The symptom was [8, 4, 4, 8]. This method took the second half of the array, reversed it, and put it in the first half of the array. This method didn't reverse the second half of the array. 
+The first bug was in the reverseInPlace() method in the ArrayExamples.java file. The failure-inducing input was [3, 5, 4, 8]. The symptom was [8, 4, 4, 8]. The correct output is [8, 4, 5, 3]. This method took the second half of the array, reversed it, and put it in the first half of the array. This method didn't reverse the second half of the array. 
 
 The buggy method was: 
 ```
@@ -111,7 +111,7 @@ static void reverseInPlace(int[] arr) {
 ```
 
 ### Second Bug
-The second bug was in the filter() method in the ListExamples.java file. The failure-inducing input was ["houses", "dog", "CSE15L", "cat", "San Diego"]. The symptom was ["cat", "dog"]. This method checks if each String in the ArrayList has a length less than 5, and if so, adds that String to a new ArrayList at index 0. Although this method is correctly filtering the ArrayList, it is adding the filtered words to the new ArrayList in the wrong order. It is adding them to index 0, when it should just be adding them to the end of the ArrayList. 
+The second bug was in the filter() method in the ListExamples.java file. The failure-inducing input was ["houses", "dog", "CSE15L", "cat", "San Diego"]. The symptom was ["cat", "dog"]. The correct output is ["dog", "cat"] This method checks if each String in the ArrayList has a length less than 5, and if so, adds that String to a new ArrayList at index 0. Although this method is correctly filtering the ArrayList, it is adding the filtered words to the new ArrayList in the wrong order. It is adding them to index 0, when it should just be adding them to the end of the ArrayList. This is why "cat" is before "dog" in the incorrect filtered ArrayList.
 
 The buggy method was: 
 ```
