@@ -1,8 +1,8 @@
 # Researching Options for the Grep Command
 ## Option: --ignore-case
-By default, grep is case-sensitive which means that grep pays attention to the difference between capital and lowercase letters when searching a file for a certain string. However, the "--ignore-case" option for grep makes it so grep isn't case sensitive and returns every line that has the particular string, regardless of if that string has the exact same capital and lowercase letters in the file as it does in the command. The "--ignore-case" option is useful because more often than not, you probably want to know all the lines that contain the particular string, and you might miss out on vital information if you just see the lines that contain the all lowercase version of the string.
+By default, grep is case-sensitive which means that grep pays attention to the difference between capital and lowercase letters when searching a file for a certain string. However, the "--ignore-case" option for grep makes it so that grep isn't case sensitive and prints every line that has the particular string, regardless of if that string has the exact same capital and lowercase letters in the file as it does in the command. The "--ignore-case" option is useful because more often than not, you probably want to know all the lines that contain the particular string, and you might miss out on vital information if you just see the lines that contain the all lowercase version of the string.
 
-The following example shows how the "--ignore-case" option makes grep return all lines that have any letter case (capital and lowercase) of "west", so lines that contain "West" are printed too.
+The following example shows how the "--ignore-case" option makes grep print all lines that have any letter case (capital and lowercase) variation of "west", so lines that contain "West" are printed too.
 ```
 grep "west" technical/911report/chapter-3.txt --ignore-case
 
@@ -13,7 +13,7 @@ contact with the West, since he refused to meet with non- Muslims. The United St
 concentrated in the southern part of the country, extending into the North-West
 Center rated the chance of success at less than 10 percent. To the northwest, the
 ```
-The following example shows how the "--ignore-case" option makes grep return all lines that have any letter case variation of "early", so lines that contain "Early" are printed too.
+The following example shows how the "--ignore-case" option makes grep print all lines that have any letter case variation of "early", so lines that contain "Early" are printed too.
 ```
 grep "early" technical/biomed/1471-213X-1-1.txt --ignore-case
 
@@ -21,7 +21,7 @@ Early in CNS development, GABA can modulate neuron
 pathway to be involved in the early development of
 early phase of
 ```
-The following example shows how the "--ignore-case" option makes grep return all lines that have any letter case variation of "clearly", so lines that contain "Clearly" are printed too.
+The following example shows how the "--ignore-case" option makes grep print all lines that have any letter case variation of "clearly", so lines that contain "Clearly" are printed too.
 ```
 grep "clearly" technical/plos/journal.pbio.0020019.txt --ignore-case
 
@@ -30,7 +30,7 @@ environmental variation (Waddington 1942). Clearly, such a mechanism would have 
 ```
 
 ## Option: --before-context
-The "--before-context" option for grep requires a number which represents the number of lines before each string match that should be printed. The lines leading up to the string match can be viewed as context for the line that contains the string match. The "--before-context" option is useful because it's always important to have context of what happened before an event (the event in this case being the line that contains the string). Without this option, you wouldn't know what actually happened leading up the event that you were searching for. 
+The "--before-context" option for grep requires a number which represents the number of lines before each string match that should be printed. The lines leading up to the string match can be viewed as context for the line that contains the string match. The "--before-context" option is useful because it's always important to have context of what happened before an event (the event in this case being the line that contains the string).
 
 The following example shows how the "--before-context" option makes grep print the 4 lines before the line that contains "seized". Without this option, you would be wondering what the documents seized by the German authorities contained.
 ```
@@ -52,7 +52,7 @@ surge transforms the landscape, comes a time for reflection and reevaluation. So
 programs and even agencies are discarded; others are invented or redesigned. Private
 firms and engaged citizens redefine their relationships with government, working
 ```
-The following example shows how the "--before-context" option makes grep print the 5 lines before the line that contains "laws". Without this option, you would ponder what laws and regulations are being referred to (as there are quite a few).
+The following example shows how the "--before-context" option makes grep print the 5 lines before the line that contains "laws". Without this option, you would ponder what laws and regulations are being referred to (as there are quite a few out there).
 ```
 grep "laws" technical/government/Gen_Account_Office/ai2132.txt --before-context 5
 
