@@ -1,5 +1,5 @@
 # Researching Options for the Grep Command
-## Option: --ignore-case
+## Option #1: --ignore-case
 By default, grep is case-sensitive which means that grep pays attention to the difference between capital and lowercase letters when searching a file for a certain string. However, the "--ignore-case" option for grep makes it so that grep isn't case sensitive and prints every line that has the particular string, regardless of if that string has the exact same capital and lowercase letters in the file as it does in the command. The "--ignore-case" option is useful because more often than not, you probably want to know all the lines that contain the particular string, and you might miss out on vital information if you just see the lines that contain the all lowercase version of the string.
 
 The following example shows how the "--ignore-case" option makes grep print all lines that have any letter case (capital and lowercase) variation of "west", so lines that contain "West" are printed too.
@@ -29,7 +29,7 @@ environmental variation (Waddington 1942). Clearly, such a mechanism would have 
 ‘knockout’ mutations were clearly beneficial because they sped up adaptation to a new
 ```
 
-## Option: --before-context
+## Option #2: --before-context
 The "--before-context" option for grep requires a number which represents the number of lines before each string match that should be printed. The lines leading up to the string match can be viewed as context for the line that contains the string match. The "--before-context" option is useful because it's always important to have context of what happened before an event (the event in this case being the line that contains the string).
 
 The following example shows how the "--before-context" option makes grep print the 4 lines before the line that contains "seized". Without this option, you would be wondering what the documents seized by the German authorities contained.
@@ -63,7 +63,7 @@ ensure that the systems include effective internal control and meet
 the requirements imposed for central reporting and complying with
 laws and regulations.
 ```
-## Option: --line-number
+## Option #3: --line-number
 The "--line-number" option for grep prints the line in the file that contains the string match, along with the line number in the file. This option has very intuitive formatting. The "--line-number" option is useful because you might want to know when a file starts talking about a certain event (the string). You might also want to know how spread out mentions of the string are which can give you an idea of how much of the content in a file revolves around a certain topic.
 
 The following example shows how the "--line-number" option prints the line number of each line that contains "business" in the file, and then prints the actual contents of each line that contains "business". 
