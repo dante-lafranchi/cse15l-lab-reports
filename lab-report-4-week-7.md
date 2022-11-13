@@ -43,7 +43,7 @@ I typed this to repeat my last edit which was typing "ce" followed by "base". Th
 
 I typed this to move my cursor to the next occurence of "start" in DocSearchServer.java.
 
-![Image](Screenshots/n(2).png
+![Image](Screenshots/n(2).png)
 
 > .
 
