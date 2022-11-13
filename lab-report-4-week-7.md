@@ -60,7 +60,7 @@ I typed this to save the edited DocSearchServer.java.
 ## Part 2
 
 ### Approach #1
-It took me 55 seconds to make the edit in VS Code, scp DocSearchServer.java to the remote server and run it there. This approach was faster and easier than having to make the edits in Vim. 
+It took me 55 seconds to make the edit in VS Code, scp DocSearchServer.java to the remote server and run it there. 
 
 ![Image](Screenshots/scp-and-ssh.png)
 
