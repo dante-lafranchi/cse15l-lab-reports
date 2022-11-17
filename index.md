@@ -6,4 +6,4 @@
 
 [Lab Report 4 Week 7 - Vim](https://dante-lafranchi.github.io/cse15l-lab-reports/lab-report-4-week-7.html)
 
-[Lab Report 5 Week 9 - Auto-Grader](https://dante-lafranchi.github.io/cse15l-lab-reports/lab-report-4-week-7.html)
+[Lab Report 5 Week 9 - Auto-Grader](https://dante-lafranchi.github.io/cse15l-lab-reports/lab-report-5-week-9.html)
