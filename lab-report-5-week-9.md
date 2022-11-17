@@ -1,4 +1,4 @@
-# Auto-grader
+# Auto-Grader
 ### Grade.sh
 ```
 rm -rf student-submission
