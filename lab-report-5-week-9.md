@@ -14,7 +14,7 @@ cd student-submission
 
 if [[ ! -f "ListExamples.java" ]]
 then 
-    echo "You don't have the file ListExamples.java in your respository."
+    echo "You don't have the file ListExamples.java in your repository."
     exit 1
 fi
 
@@ -60,7 +60,7 @@ fi
  
 ![Image](Screenshots/list-methods-compile-error.png)
 
-![Image](Screenshots/list-methods-filename.png)
+![Image](Screenshots/list-methods-filename1.png)
 
 ### Trace
 The repository I am tracing is https://github.com/ucsd-cse15l-f22/list-methods-lab3.
