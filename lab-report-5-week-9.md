@@ -63,7 +63,7 @@ fi
 ![Image](Screenshots/list-methods-filename.png)
 
 ### Trace
-I am tracing is https://github.com/ucsd-cse15l-f22/list-methods-lab3 in grade.sh. 
+The repository I am tracing is https://github.com/ucsd-cse15l-f22/list-methods-lab3.
 
 Lines 1-3: No standard output or standard error. Each return code was 0.
 
@@ -90,7 +90,7 @@ Line 27: The condition for this if statement was false because the exit code fro
 
 Lines 28-31: These lines didn't run because the condition for the if statement on line 27 for false.
 
-Line 33: The standard output was 
+Line 33: The standard error was 
 ```
 JUnit version 4.13.2
 .E..E.
@@ -113,7 +113,7 @@ java.lang.AssertionError: expected:<[cat, dog, cat, cat]> but was:<[cat, cat, do
 FAILURES!!!
 Tests run: 4,  Failures: 2
 ``` 
-No standard error. Return code was 0.
+No standard output. Return code was 0.
 
 Line 35: This if statement didn't run because the grep command returned 1 as an exit code which means it didn't find the string in the file and the condition for the if statement is false because 1 means false.
 
