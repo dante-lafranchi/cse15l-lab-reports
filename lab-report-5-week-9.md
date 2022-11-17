@@ -88,7 +88,7 @@ Lines 18-25: No standard output or standard error. Each return code was 0.
 
 Line 27: The condition for this if statement was false because the exit code from the previous javac command was 0.
 
-Lines 28-31: These lines didn't run because the condition for the if statement on line 27 for false.
+Lines 28-31: These lines didn't run because the condition for the if statement on line 27 was false.
 
 Line 33: The standard error was 
 ```
@@ -123,9 +123,15 @@ Line 39: This if statement didn't run because the grep command returned 1 as an 
 
 Lines 40-42: These lines didn't run because the condition for the if statement on line 39 was false.
 
-Line 43-44: This if statement ran because the grep command returned 0 as an exit code which means it found the string in the file and the condiiton for the if statement is true because 0 means true.
+Line 43-44: This if statement ran because the grep command returned 0 as an exit code which means it found the string in the file and the condition for the if statement is true because 0 means true.
 
-Line 45-46: No standard output or standard error. Return code was 0.
+Line 45-46: The standard output was
+```
+PASSED 2/4 TESTS
+Your score is 50%
+```
+
+No standard error. Return code was 0.
 
 Line 47: This if statement didn't run because the grep command returned 1 as an exit code which means it didn't find the string in the file and the condition for the if statement is false because 1 means false.
 
