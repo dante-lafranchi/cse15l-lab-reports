@@ -64,7 +64,7 @@ fi
 ### Trace
 The repository I am tracing is https://github.com/ucsd-cse15l-f22/list-methods-lab3.
 
-Line 1-2: "rm -rf" goes through a directory and recursively removes everything (files, subdirectories, and so on) in that directory, including the actual directory. This command is forced which means it doesn't ask for confirmation. After these commands are run, the student-submission and student-code-and-test no longer exist. No standard output or standard error. Each return code was 0. 
+Line 1-2: "rm -rf" goes through a directory and recursively removes everything (files, subdirectories, and so on) in that directory, including the actual directory. This command is forced which means it doesn't ask for confirmation. After these commands are run, the student-submission and student-code-and-test directories no longer exist. No standard output or standard error. Each return code was 0. 
 
 Line 3: The standard output was 
 ```
@@ -112,17 +112,17 @@ java.lang.AssertionError: expected:<[cat, dog, cat, cat]> but was:<[cat, cat, do
 FAILURES!!!
 Tests run: 4,  Failures: 2
 ``` 
-No standard output. Return code was 1. 
+No standard output. Return code was 1. This command ran TestListExamples.java which had the JUnit tests.
 
 Line 34: The grep command returned 1 as an exit code which means it didn't find the string in the file and the condition for the if statement is false because 1 means false in bash.
 
-Lines 35-37: These lines didn't run because the condition for the if statement on line 35 was false.
+Lines 35-37: These lines didn't run because the condition for the if statement on line 34 was false.
 
 Line 38: The grep command returned 1 as an exit code which means it didn't find the string in the file and the condition for the if statement is false because 1 means false.
 
-Lines 39-41: These lines didn't run because the condition for the if statement on line 39 was false.
+Lines 39-41: These lines didn't run because the condition for the if statement on line 38 was false.
 
-Line 42: The grep command returned 0 as an exit code which means it found the string in the file and the condition for the if statement is true because 0 means true.
+Line 42: The grep command returned 0 as an exit code which means it found the string in the file and the condition for the if statement is true because 0 means true in bash.
 
 Line 43-45: The standard output was
 ```
@@ -133,6 +133,6 @@ No standard error. Return code was 0. The standard output is from the two echo c
 
 Line 46: The grep command returned 1 as an exit code which means it didn't find the string in the file and the condition for the if statement is false because 1 means false.
 
-Lines 47-49: These lines didn't run because the condition for the if statement on line 47 was false.
+Lines 47-49: These lines didn't run because the condition for the if statement on line 46 was false.
 
 Line 50: This line ended the if/elif statements. No standard output or error. Return code was 0.
